@@ -9,7 +9,6 @@ from werkzeug.utils import secure_filename
 from PIL import Image
 
 
-
 UPLOAD_FOLDER = '/TestApp/static'
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'gif'}
 POST_COUNTER = 0
