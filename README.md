@@ -13,7 +13,9 @@ sudo docker-compose up web
 3. There are 2 ways of how you can upload the picture:
   - With your web browser. Just proseed to `http://127.0.0.1:5000` or `localhost:5000`.
   - By Post-request from terminal. Just run this: 
-  ```curl -F 'file=@YOUR_FILE_ADDRESS_HERE' -i "http://0.0.0.0:5000"```
+  ```
+  curl -F 'file=@YOUR_FILE_ADDRESS_HERE' -i "http://127.0.0.1:5000"
+  ```
 
 ## Attention
 
