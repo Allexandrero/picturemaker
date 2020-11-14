@@ -1,0 +1,9 @@
+Flask==1.1.2
+Werkzeug==1.0.1
+requests==2.18.4
+Pillow==8.0.1
+click==6.7
+itsdangerous==0.24
+Jinja2==2.10.1
+MarkupSafe==0.23
+wheel==0.24.0
