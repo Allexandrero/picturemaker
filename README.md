@@ -25,3 +25,8 @@ If you use parser from web-form - you'll recieve a greyscale (512x512) version o
 
 Also, if you use parser from terminal - you won't get the greyscale version of image, but, instead, information about the uploaded image in JSON format.
 
+
+If anything goes wrong with docker-compose image, you may rebuild it with this command:
+```
+sudo docker-compose up --build web
+```
