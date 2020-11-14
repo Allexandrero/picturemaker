@@ -12,7 +12,7 @@ sudo docker-compose up web
 > If you'd like to use Docker-compose as background process, you may add `-d` between `up` & `web`
 
 3. There are 2 ways of how you can upload the picture:
-  - With your web browser. Just proseed to `http://0.0.0.0:5000` or `localhost:5000`.
+  - With your web browser. Just proseed to `http://0.0.0.0:5000`.
   
   - By Post-request from terminal. Just run this: 
   ```
