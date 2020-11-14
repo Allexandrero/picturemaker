@@ -10,7 +10,7 @@ from PIL import Image
 
 
 
-UPLOAD_FOLDER = '/code/static'
+UPLOAD_FOLDER = '/TestApp/static'
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'gif'}
 POST_COUNTER = 0
 
