@@ -9,7 +9,7 @@ from werkzeug.utils import secure_filename
 from PIL import Image
 
 
-UPLOAD_FOLDER = '/TestApp/static'
+UPLOAD_FOLDER = '/TestApp/static'  # Needs to be changed if using outside the container
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'gif'}
 POST_COUNTER = 0
 
@@ -59,13 +59,11 @@ def upload_file():
 
     if file and allowed_file(file.filename):
         filename = secure_filename(file.filename)
-        image_path = UPLOAD_FOLDER + '/' + file.filename
-
+        image_path = UPLOAD_FOLDER + '/' + filename
         file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-
         resize_image(image_path, (512, 512))           
     
-    return redirect(url_for('get_render', image=file.filename))
+    return redirect(url_for('get_render', image=filename))
 
 
 @app.route('/', methods=['GET'])
