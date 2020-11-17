@@ -1,7 +1,21 @@
 <!doctype html>
+<head>
+    <style>
+    .left {
+        float: left; 
+        margin: 0 0 5px 5px; 
+        padding-left: 20px;
+    }
+    p {
+        font-family: "Courier New", Courier, monospace;
+    }
+   </style>
     <title>Upload new File</title>
+</head>
 
-    <h1>Upload new File</h1>
+
+<div class="left">
+    <h1><p>Upload new File</p></h1>
 
 <form method=post action="/upload" enctype=multipart/form-data>
     
@@ -10,9 +24,11 @@
 
 </form>
 
+</div>
+
 {% if filename %}
-<div>
-    <h2>Success! Wanna resize another one?</h2><br>
+<div class="left">
+    <h1><p>Success! Wanna resize another one?</p></h1>
     <img src="{{ url_for('get_image', image=filename) }}">
 </div>
 {% endif %}
